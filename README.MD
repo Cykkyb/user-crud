@@ -18,6 +18,10 @@
    ```shell
    composer update
 
+5. Создайте миграции(Внутри контейнера с php):
+   ```shell
+   php bin/console make:migration
+
 5. Выполните миграции для создания необходимых таблиц в базе данных(Внутри контейнера с php):
    ```shell
-   bin/console doctrine:migrations:migrate
+   зphp bin/console doctrine:migrations:migrate

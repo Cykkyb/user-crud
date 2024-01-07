@@ -9,7 +9,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\Table(name: '`user`')]
-#[UniqueEntity(fields: ['email'], message: 'Email уже занят.')]
+#[UniqueEntity(fields: ['email'], message: 'Email занят.')]
 class User
 {
     #[ORM\Id]

@@ -5,7 +5,7 @@ services:
     build:
       context: ./docker/php
     volumes:
-      - './www:/var/www/html'
+      - './www:/var/www'
     environment:
       PHP_IDE_CONFIG: "serverName=Docker"
     extra_hosts:
@@ -15,7 +15,7 @@ services:
     container_name: nginx_symfony
     image: nginx:latest
     volumes:
-      - './www:/var/www/html'
+      - './www:/var/www'
       - './docker/nginx/conf.d:/etc/nginx/conf.d'
     ports:
       - ${SERVER_PORT}:80
