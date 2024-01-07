@@ -14,14 +14,17 @@
    ```shell
    docker-compose up -d
    
-6. Выполните обновление зависимостей Composer(Внутри контейнера с php):  
-   ```shell
+5. Выполните обновление зависимостей Composer(Внутри контейнера с php):
+   ```
    composer update
+   ```
 
-5. Создайте миграции(Внутри контейнера с php):
-   ```shell
+6. Создайте миграции(Внутри контейнера с php):
+   ```
    php bin/console make:migration
+   ```
 
-5. Выполните миграции для создания необходимых таблиц в базе данных(Внутри контейнера с php):
-   ```shell
-   зphp bin/console doctrine:migrations:migrate
+7. Выполните миграции для создания необходимых таблиц в базе данных(Внутри контейнера с php):
+   ```
+   php bin/console doctrine:migrations:migrate
+   ```
